@@ -69,5 +69,13 @@ bun install
 bun run index.ts
 
 
+## 🖼️ Preview
+
+### 🧠 Normal + Web Conversation Mode
+![Normal Chat](https://github.com/100NikhilBro/groq-memsearch-bot/blob/main/Screenshot%202025-10-30%20002555.png)
+
+### 🌐 Web Search + Memory Mode
+![Web Search](https://github.com/100NikhilBro/groq-memsearch-bot/blob/main/Screenshot%202025-10-30%20002656.png)
+
 
 
