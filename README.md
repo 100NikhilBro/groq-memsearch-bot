@@ -64,8 +64,8 @@ TAVILY_API_KEY="your_tavily_api_key"
 ```
 
 ## 🧩 Setup & Run
-bun init -y
-bun install
+bun init -y  || 
+bun install  ||
 bun run index.ts
 
 
