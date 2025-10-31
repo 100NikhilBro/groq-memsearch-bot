@@ -7,11 +7,13 @@ import { checkpointer } from './memory.js';
 const toolNode = new ToolNode(tools);
 const llm = createGroqClient(tools);
 
+
 const callModel = async (state: any) => {
   console.log("Calling LLM...");
   const responses = await llm.invoke(state.messages);
   return { messages: [responses] };
 };
+
 
 const shouldContinue = (state: any) => {
   const lastMessage = state.messages[state.messages.length - 1];
@@ -29,5 +31,6 @@ export const createGraph = () => {
     .addEdge("tools", "agent")
     .addConditionalEdges("agent", shouldContinue);
 
+  
   return graphFlow.compile({ checkpointer });
 };
