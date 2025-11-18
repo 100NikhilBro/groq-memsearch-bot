@@ -3,8 +3,8 @@ import { ENV } from '../utils/env';
 
 export const tavilyTool = new TavilySearch({
     tavilyApiKey:ENV.TAVILY_API_KEY,
-  maxResults: 3,
-  topic: 'general',
+    maxResults: 3,
+    topic: 'general',
 });
 
 export const tools = [tavilyTool];
